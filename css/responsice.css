@@ -1,0 +1,53 @@
+/* Mobile responsive  */
+@media (max-width: 768px) {
+  /* nav bar responsive  */
+  .nav-bar ul {
+    flex-direction: column;
+    padding-top: 1.5rem;
+    margin-right: 0.5rem;
+    position: absolute;
+    top: 1.6rem;
+    right: 0.5rem;
+    background-color: #87509c;
+    border-radius: 0.2rem;
+    text-align: right;
+    padding-right: 1rem;
+    box-shadow: -5px 4px 10px rgba(0, 0, 0, 0.5);
+    display: none;
+  }
+  .nav-bar .logo {
+    padding: 0.5rem 0;
+  }
+  /* card responsive  */
+  .card-group {
+    flex-direction: column;
+  }
+  .menu-toggle {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    background-color: #643a79;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    display: block;
+  }
+  /* portfolio responsive  */
+  .portfolio-group {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .portfolio-card img {
+    max-width: 100%;
+  }
+  .row-card {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  /* contact responsive  */
+  .input-group {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,423 @@
+/* Import font family */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,400;1,500;1,700&family=Titillium+Web:ital,wght@0,200;0,400;0,600;0,700;1,200&display=swap");
+
+/* ----------------- website colors -----------------  */
+
+/* Navigation Hover color: #643A79
+
+Primary color: #30BAE7
+Secondary color: #17C2A4
+orange color: #EB7D4B
+
+Banner background color: #87509C
+Services background color: #17C2A4
+Team Background color: #E7F1F8
+Portfolio Background(light orange): #FFDD99
+About Background(purple): #D74680
+contact background: #3C5499
+contact input background: #273A71
+
+
+Team social icon background: #BDD1DF */
+
+/* ------------------------ X ------------------------ */
+
+/* ======================= utility style start ======================= */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Titillium Web", sans-serif;
+}
+* {
+  box-sizing: border-box;
+  transition: all 500ms ease;
+  scroll-behavior: smooth;
+}
+.btn-primary {
+  padding: 1rem 2rem;
+  color: #fff;
+  background-color: #30bae7;
+  border: none;
+  text-decoration: none;
+  border-bottom: 0.2rem solid #299ec5;
+  outline: none;
+  border-radius: 3px;
+  width: fit-content;
+  cursor: pointer;
+}
+.btn-primary:hover {
+  background-color: #299ec5;
+}
+
+.btn-secondary {
+  padding: 1rem 2rem;
+  color: #fff;
+  background-color: #17c2a4;
+  border: none;
+  text-decoration: none;
+  border-bottom: 0.2rem solid #14a58c;
+  outline: none;
+  border-radius: 3px;
+  width: fit-content;
+  cursor: pointer;
+}
+.btn-secondary:hover {
+  background-color: #14a58c;
+}
+.btn-orange {
+  padding: 1rem 2rem;
+  color: #fff;
+  background-color: #eb7d4b;
+  border: none;
+  text-decoration: none;
+  border-bottom: 0.2rem solid #c86a40;
+  outline: none;
+  border-radius: 3px;
+  width: fit-content;
+  cursor: pointer;
+}
+.btn-orange:hover {
+  background-color: #c86a40;
+}
+.content-center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 92vh;
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 0.5rem;
+}
+.heading-divider {
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 0.2rem;
+  width: 5rem;
+  margin: 0.5rem;
+}
+h2 {
+  margin: 0;
+}
+section p {
+  max-width: 600px;
+  text-align: center;
+  margin: 0 0.5rem;
+}
+/* ======================= utility style end ======================= */
+
+/* ======================= Navigation area start ======================= */
+nav {
+  background-color: #87509c;
+  padding-top: 1rem;
+  position: sticky;
+  top: 0;
+}
+.menu-toggle {
+  display: none;
+}
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.nav-bar ul {
+  display: flex;
+  flex-wrap: wrap;
+  animation: menuSlideRight 500ms ease-in-out;
+}
+
+@keyframes menuSlideRight {
+  from {
+    transform: translateX(50%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+.nav-bar ul li {
+  list-style: none;
+}
+.nav-bar ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0.2rem 0.8rem;
+  border-radius: 0.2rem;
+  font-weight: 600;
+}
+.nav-bar ul li a:hover {
+  background-color: #643a79;
+}
+/* ======================= Navigation area end ======================= */
+
+/* ======================= Banner area start ======================= */
+header {
+  background-color: #87509c;
+}
+header h1 {
+  color: #fff;
+  text-align: center;
+  max-width: 700px;
+}
+/* ======================= Banner area end ======================= */
+
+/* ======================= Services area end ======================= */
+#work {
+  background-color: #17c2a4;
+  overflow: hidden;
+  color: #fff;
+  padding: 1rem 0;
+}
+.card-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  text-align: center;
+  padding: 3rem 0;
+}
+.col-card {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.col-card img {
+  height: 5rem;
+}
+/* ======================= Services area end ======================= */
+
+/* ======================= Team area end ======================= */
+#team {
+  background-color: #e7f1f8;
+  text-align: center;
+  padding: 2rem 0;
+}
+.col-card .circle-shape {
+  height: 150px;
+  width: 150px;
+  background-color: gray;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.col-card h3,
+p {
+  margin: 0.2rem 0;
+}
+.team-position {
+  color: #30bae7;
+}
+.team-social {
+  margin: 1rem 0;
+}
+.team-social a {
+  padding: 0.2rem;
+  background-color: #bdd1df;
+  border-radius: 50%;
+  color: #fff;
+}
+.team-social a:hover {
+  background-color: #30bae7;
+}
+.team-social a i {
+  height: 30px;
+  width: 25px;
+}
+
+/* ======================= Team area end ======================= */
+
+/* ============ Skills area end============  */
+
+#skills {
+  padding: 2rem 0;
+}
+/* Skill radial progress bar */
+
+.progress-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+/* web design skill  */
+.web-design {
+  background: radial-gradient(closest-side, white 79%, transparent 80% 100%),
+    conic-gradient(#30bae7 90%, #dfe8ed 0);
+}
+
+.web-design::before {
+  content: "90%";
+  font-size: 25px;
+}
+
+/* html css skill  */
+.html-css {
+  background: radial-gradient(closest-side, white 79%, transparent 80% 100%),
+    conic-gradient(#d74680 75%, #dfe8ed 0);
+}
+
+.html-css::before {
+  content: "75%";
+  font-size: 25px;
+}
+
+/* graphics design skill  */
+.graphics-design {
+  background: radial-gradient(closest-side, white 79%, transparent 80% 100%),
+    conic-gradient(#15c7a8 70%, #dfe8ed 0);
+}
+
+.graphics-design::before {
+  content: "70%";
+  font-size: 25px;
+}
+/* ui/ux skill  */
+.ui-ux {
+  background: radial-gradient(closest-side, white 79%, transparent 80% 100%),
+    conic-gradient(#eb7d4b 85%, #dfe8ed 0);
+}
+
+.ui-ux::before {
+  content: "85%";
+  font-size: 25px;
+}
+/* ============ Skills area end============  */
+
+/* ============ portfolio area end ============  */
+#portfolio {
+  background-color: #ffdd99;
+  padding: 2rem 0;
+}
+.portfolio-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 2rem 0.5rem;
+}
+.portfolio-card img {
+  max-width: 400px;
+}
+.portfolio-card {
+  animation: fadeIn 500ms ease;
+}
+@keyframes fadeIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.portfolio-menu ul {
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+}
+.portfolio-menu ul li {
+  list-style: none;
+  background-color: #ebc985;
+  padding: 0.2rem 0.8rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+.portfolio-menu ul li:hover {
+  background-color: #bdd1df;
+}
+
+/* ============ portfolio area end============  */
+
+/* ============ about area start ============  */
+
+#about {
+  background-color: #d74680;
+  color: #fff;
+  padding: 2rem 0;
+}
+.row-card {
+  display: flex;
+  text-align: left;
+  gap: 1rem;
+  margin: 3rem;
+}
+.row-card .circle-shape {
+  height: 90px;
+  width: 90px;
+  background-color: gray;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.row-card h3 {
+  margin: 0;
+}
+.row-card p {
+  width: 300px;
+  text-align: left;
+  margin: 0;
+  font-style: italic;
+}
+.row-card small {
+  color: #ffdd99;
+}
+/* ============ about area end ============  */
+
+/* ============ contact area end ============  */
+#contact {
+  background-color: #3c5499;
+  color: #fff;
+}
+#contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+  align-items: center;
+  width: 70%;
+}
+#contact .input-group {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+#contact form .input-group input,
+#contact textarea {
+  border: none;
+  background-color: #273a71;
+  padding: 0.8rem;
+  border-radius: 0.2rem;
+  align-self: stretch;
+  color: #fff;
+  width: 100%;
+}
+#contact form .input-group input:focus,
+#contact textarea:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: #bdd1df;
+}
+/* ============ contact area end 
+============  */
+
+/* ============ contact area end ============  */
+footer {
+  text-align: center;
+  background-color: #344b8e;
+  padding: 2rem 0;
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 1.5rem;
+  font-size: 1.2rem;
+}
+footer a:hover {
+  color: #31a1d2;
+}
+/* ============ contact area end ============  */
